@@ -8,6 +8,8 @@ function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min) + min)
   }
 
+  
+
 console.log('Welcome to the Brain Games!');
 const WhatName = () => {
     const name = readlineSync.question('May I have your name? ');
