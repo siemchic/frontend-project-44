@@ -35,7 +35,7 @@ for ( let i = 0; i < 3; i++){
             //проверяет правильный ответ
             else {
                 i = 4;
-                console.log("'no' is wrong answer ;(. Correct answer was 'yes'.");
+                console.log("'" + answer + "' is wrong answer ;(. Correct answer was 'yes'.");
                 console.log("Let's try again, " + name);
             } 
             }
@@ -45,7 +45,7 @@ for ( let i = 0; i < 3; i++){
             }
                 else {
                 i = 4;
-                console.log("'yes' is wrong answer ;(. Correct answer was 'no'.");
+                console.log("'" + answer + "' is wrong answer ;(. Correct answer was 'no'.");
                 console.log("Let's try again, " + name);
                 }
         }
