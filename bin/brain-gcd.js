@@ -14,9 +14,9 @@ const WhatName = () => {
     console.log ('Hello, ' + name + '!');
     return name;
 }
-let schetpravotvet = 0;
-//ввод имени игрока
+
 const name = WhatName();
+
 console.log('Find the greatest common divisor of given numbers.');
 
 for (let i = 0; i < 3; i++) {
