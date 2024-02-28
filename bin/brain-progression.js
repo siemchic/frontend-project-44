@@ -15,7 +15,7 @@ function getRandomNumber(min, max) {
   }
 
 const name = WhatName();
-
+console.log('What number is missing in the progression?');
 for (let j = 0; j < 3; j++){
 let stroka = 'Question:';
 let mass = [];
