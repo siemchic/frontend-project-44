@@ -25,7 +25,7 @@ for ( let i = 0; i < 3; i++){
     let chislo2 = getRandomNumber(1, 100);
     let randomIndex = Math.floor(Math.random() * 3);
     let randomElement = znak[randomIndex];
-    console.log(chislo1 + randomElement + chislo2);
+    console.log('Qestion: ' + chislo1 + randomElement + chislo2);
 
     if (randomElement === '+'){
         rez = chislo1 + chislo2;
