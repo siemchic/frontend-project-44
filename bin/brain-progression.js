@@ -57,3 +57,4 @@ console.log('Correct!');
 if (j === 2){
     console.log('Congratulations, ' + name);}
 }
+
