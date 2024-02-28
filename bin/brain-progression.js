@@ -17,7 +17,7 @@ function getRandomNumber(min, max) {
 const name = WhatName();
 
 for (let j = 0; j < 3; j++){
-let stroka = 'Qestion:';
+let stroka = 'Question:';
 let mass = [];
 //количество элементов
 let amountOFelement = getRandomNumber(5, 10);
@@ -55,6 +55,6 @@ if (answer != TryElement){
 }
 console.log('Correct!');
 if (j === 2){
-    console.log('Congratulations, ' + name);}
+    console.log('Congratulations, ' + name + '!');}
 }
 

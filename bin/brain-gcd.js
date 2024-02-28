@@ -22,7 +22,7 @@ console.log('Find the greatest common divisor of given numbers.');
 for (let i = 0; i < 3; i++) {
     let number1 = getRandomNumber(1, 100);
     let number2 = getRandomNumber(1, 100);
-    console.log('Qestion: ' + number1 + ' ' + number2)
+    console.log('Question: ' + number1 + ' ' + number2)
     for (; number1 != number2; ){
         if (number1 > number2){
             number1 = number1 - number2;
@@ -40,7 +40,7 @@ for (let i = 0; i < 3; i++) {
     }
     console.log('Correct!!!');
     if (i === 2) {
-        console.log('Congratulations, ' + name);
+        console.log('Congratulations, ' + name + '!');
         break
     }
 }

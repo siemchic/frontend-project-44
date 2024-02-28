@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 import readlineSync, { question } from 'readline-sync';
 
 console.log('Welcome to the Brain Games!');
@@ -30,7 +31,7 @@ const mass = [1, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59,
 //цикл с вопросами
 for (let i = 0; i < 3; i++){
     let vopros = getRandomNumber(1, 100);
-    console.log('Qestion: ' + vopros );
+    console.log('Question: ' + vopros );
     let answer =  readlineSync.question('Your answer: ');
     const tru = contains(mass, vopros);
     //цикл с проверкой
