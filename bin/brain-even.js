@@ -50,7 +50,7 @@ for ( let i = 0; i < 3; i++){
                 }
         }
  if (i === 2) {
-    console.log('Congratulations, ' + name);
+    console.log('Congratulations, ' + name + '!') ;
  }   
 
 }
