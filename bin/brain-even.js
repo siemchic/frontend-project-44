@@ -36,7 +36,7 @@ for ( let i = 0; i < 3; i++){
             else {
                 i = 4;
                 console.log("'" + answer + "' is wrong answer ;(. Correct answer was 'yes'.");
-                console.log("Let's try again, " + name);
+                console.log("Let's try again, " + name + '!');
             } 
             }
         else if (del === 1){
@@ -46,7 +46,7 @@ for ( let i = 0; i < 3; i++){
                 else {
                 i = 4;
                 console.log("'" + answer + "' is wrong answer ;(. Correct answer was 'no'.");
-                console.log("Let's try again, " + name);
+                console.log("Let's try again, " + name + '!');
                 }
         }
  if (i === 2) {
