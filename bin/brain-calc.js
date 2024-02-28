@@ -45,6 +45,7 @@ for ( let i = 0; i < 3; i++){
 
     if (rezult != answer) {
         console.log("'" + answer + "' is wrong answer ;(. Correct answer was '" + rezult + "'.");
+        console.log("Let's try again, " + name + '!');
         break;
     }
     console.log('Correct!');
