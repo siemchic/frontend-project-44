@@ -29,15 +29,15 @@ for ( let i = 0; i < 3; i++){
 
     if (randomElement === '+'){
         rez = chislo1 + chislo2;
-        console.log('znachenie = ' + rez);
+        //console.log('znachenie = ' + rez);
     }
     else if (randomElement === '-') {
         rez = chislo1 - chislo2;
-        console.log('znachenie = ' + rez);
+        //console.log('znachenie = ' + rez);
     }
     else if  (randomElement === '*') {
         rez = chislo1 * chislo2;
-        console.log('znachenie = ' + rez);
+        //console.log('znachenie = ' + rez);
     }
 
     let answer = readlineSync.question('Your answer: ');
