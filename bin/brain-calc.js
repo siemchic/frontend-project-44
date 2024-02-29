@@ -2,10 +2,10 @@
 import readlineSync from 'readline-sync';
 
 // функция рандомного числа
-function getRandomNumber(min, max) {
-  min = Math.ceil(min)
-  max = Math.floor(max)
-  return Math.floor(Math.random() * (max - min) + min)
+function getRandomNumber(minNumber, maxNumber) {
+  minNumber = Math.ceil(minNumber)
+  maxNumber = Math.floor(maxNumber)
+  return Math.floor(Math.random() * (maxNumber - minNumber) + minNumber)
 }
 
 console.log('Welcome to the Brain Games!');
