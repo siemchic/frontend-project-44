@@ -13,6 +13,8 @@ brain-prime:
 	node bin/brain-prime.js
 publish:
 	npm publish --dry-run
-make lint: 
-	npx eslint .
+lint: 
+	npx eslint bin/**/*
+lint_fix:
+	npx eslint . --fix
 	
