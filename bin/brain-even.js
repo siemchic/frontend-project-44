@@ -3,9 +3,9 @@ import readlineSync from 'readline-sync';
 
 // функция рандомного числа
 function getRandomNumber(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min) + min);
+  const minNum = Math.ceil(min);
+  const maxNum = Math.floor(max);
+  return Math.floor(Math.random() * (maxNum - minNum) + minNum);
 }
 
 console.log('Welcome to the Brain Games!');
@@ -30,9 +30,7 @@ for (let i = 0; i < 3; i += 1) {
   if (del === 0) {
     if (answer === 'yes') {
       console.log('Correct!');
-    }
-    // проверяет правильный ответ
-    else {
+    } else {
       i = 4;
       console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes'.`);
       console.log(`Let's try again, ${name}!`);

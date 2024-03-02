@@ -9,9 +9,9 @@ const WhatName = () => {
 };
 
 function getRandomNumber(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min) + min);
+  const minNum = Math.ceil(min);
+  const maxNum = Math.floor(max);
+  return Math.floor(Math.random() * (maxNum - minNum) + minNum);
 }
 
 const name = WhatName();
@@ -35,14 +35,14 @@ for (let j = 0; j < 3; j += 1) {
   // скрывание рандомного элемента
   const randomElement = getRandomNumber(1, amountOFelement);
   const y = randomElement;
-  const TryElement = mass[y];
+  const TryElement = mass[y].toString();
 
   // цикл перевода из массива в строку
   for (let n = 0; n < mass.length; n += 1) {
     if (n === y) {
       stroka += ' .. ';
     } else {
-      const sumbol = parseInt(mass[n]);
+      const sumbol = parseInt(mass[n], 10);
       stroka = `${stroka} ${sumbol}`;
     }
   }
