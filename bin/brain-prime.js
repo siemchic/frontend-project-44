@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import readlineSync, { question } from 'readline-sync';
+import readlineSync from 'readline-sync';
 
 console.log('Welcome to the Brain Games!');
 const WhatName = () => {
@@ -16,7 +16,7 @@ function getRandomNumber(min, max) {
 }
 
 function contains(mass, vopros) {
-  for (let j = 0; j < mass.length; j++) {
+  for (let j = 0; j < mass.length; j += 1) {
     if (mass[j] === vopros) {
       return true;
     }

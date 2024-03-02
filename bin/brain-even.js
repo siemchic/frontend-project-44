@@ -3,8 +3,8 @@ import readlineSync from 'readline-sync';
 
 // функция рандомного числа
 function getRandomNumber(min, max) {
-  let min = Math.ceil(min);
-  let max = Math.floor(max);
+  min = Math.ceil(min);
+  max = Math.floor(max);
   return Math.floor(Math.random() * (max - min) + min);
 }
 
@@ -19,7 +19,7 @@ const name = WhatName();
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 // цикл с рандомным числом
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < 3; i += 1) {
   // вопрос
   const randomnumber = getRandomNumber(1, 100);
   console.log(`Question: ${randomnumber}`);
