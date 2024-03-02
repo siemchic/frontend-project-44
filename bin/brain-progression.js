@@ -40,7 +40,7 @@ for (let j = 0; j < 3; j += 1) {
   // цикл перевода из массива в строку
   for (let n = 0; n < mass.length; n += 1) {
     if (n === y) {
-      stroka += ' .. ';
+      stroka += ' ..';
     } else {
       const sumbol = parseInt(mass[n], 10);
       stroka = `${stroka} ${sumbol}`;
