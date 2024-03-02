@@ -3,54 +3,52 @@ import readlineSync from 'readline-sync';
 
 // функция рандомного числа
 function getRandomNumber(minNumber, maxNumber) {
-  minNumber = Math.ceil(minNumber)
-  maxNumber = Math.floor(maxNumber)
-  return Math.floor(Math.random() * (maxNumber - minNumber) + minNumber)
+  minNumber = Math.ceil(minNumber);
+  maxNumber = Math.floor(maxNumber);
+  return Math.floor(Math.random() * (maxNumber - minNumber) + minNumber);
 }
 
 console.log('Welcome to the Brain Games!');
 const WhatName = () => {
   const name = readlineSync.question('May I have your name? ');
-  console.log ('Hello, ' + name + '!');
+  console.log(`Hello, ${name}!`);
   return name;
-}
+};
 // ввод имени игрока
 const name = WhatName();
 let rez = 0;
 console.log('What is the result of the expression?');
 // цикл вопросов
-for ( let i = 0; i < 3; i++) {
-var znak = ['+', '-', '*'];
-let chislo1 = getRandomNumber(1, 100);
-let chislo2 = getRandomNumber(1, 100);
-let randomIndex = Math.floor(Math.random() * 3);
-let randomElement = znak[randomIndex];
-console.log('Question: ' + chislo1 + ' ' + randomElement + ' ' + chislo2);
+for (let i = 0; i < 3; i += 1) {
+  const znak = ['+', '-', '*'];
+  const chislo1 = getRandomNumber(1, 100);
+  const chislo2 = getRandomNumber(1, 100);
+  const randomIndex = Math.floor(Math.random() * 3);
+  const randomElement = znak[randomIndex];
+  console.log(`Question: ${chislo1} ${randomElement} ${chislo2}`);
 
-if (randomElement === '+') {
-rez = chislo1 + chislo2;
-// console.log('znachenie = ' + rez);
-}
-else if (randomElement === '-') {
-rez = chislo1 - chislo2;
-// console.log('znachenie = ' + rez);
-}
-else if  (randomElement === '*') {
-rez = chislo1 * chislo2;
-// console.log('znachenie = ' + rez);
-}
+  if (randomElement === '+') {
+    rez = chislo1 + chislo2;
+    // console.log('znachenie = ' + rez);
+  } else if (randomElement === '-') {
+    rez = chislo1 - chislo2;
+    // console.log('znachenie = ' + rez);
+  } else if (randomElement === '*') {
+    rez = chislo1 * chislo2;
+    // console.log('znachenie = ' + rez);
+  }
 
-let answer = readlineSync.question('Your answer: ');
-let rezult = rez;
+  const answer = readlineSync.question('Your answer: ');
+  const rezult = rez;
 
-if (rezult != answer) {
-console.log("'" + answer + "' is wrong answer ;(. Correct answer was '" + rezult + "'.");
-console.log("Let's try again, " + name + '!');
-break;
-}
-console.log('Correct!');
-if (i === 2) {
-console.log('Congratulations, ' + name + '!');
-break
-}
+  if (rezult !== answer) {
+    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rezult}'.`);
+    console.log(`Let's try again, ${name}!`);
+    break;
+  }
+  console.log('Correct!');
+  if (i === 2) {
+    console.log(`Congratulations, ${name}!`);
+    break;
+  }
 }
