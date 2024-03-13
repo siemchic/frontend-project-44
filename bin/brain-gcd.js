@@ -1,19 +1,9 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-
-// функция рандомного числа
-function getRandomNumber(min, max) {
-  const minNum = Math.ceil(min);
-  const maxNum = Math.floor(max);
-  return Math.floor(Math.random() * (maxNum - minNum) + minNum);
-}
-
-console.log('Welcome to the Brain Games!');
-const WhatName = () => {
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
-  return name;
-};
+import {
+  Congratulations, getRandomNumber, WhatName,
+// eslint-disable-next-line import/extensions
+} from '../src/index.js';
 
 const name = WhatName();
 
@@ -40,8 +30,5 @@ for (let i = 0; i < 3; i += 1) {
     break;
   }
   console.log('Correct!!!');
-  if (i === 2) {
-    console.log(`Congratulations, ${name}!`);
-    break;
-  }
+  Congratulations(name, i);
 }

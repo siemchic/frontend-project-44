@@ -1,22 +1,13 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-
-console.log('Welcome to the Brain Games!');
-const WhatName = () => {
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
-  return name;
-};
-
-function getRandomNumber(min, max) {
-  const minNum = Math.ceil(min);
-  const maxNum = Math.floor(max);
-  return Math.floor(Math.random() * (maxNum - minNum) + minNum);
-}
+import {
+  Congratulations, getRandomNumber, WhatName,
+// eslint-disable-next-line import/extensions
+} from '../src/index.js';
 
 const name = WhatName();
 console.log('What number is missing in the progression?');
-for (let j = 0; j < 3; j += 1) {
+for (let i = 0; i < 3; i += 1) {
   let stroka = 'Question:';
   const mass = [];
   // количество элементов
@@ -28,7 +19,7 @@ for (let j = 0; j < 3; j += 1) {
   mass.push(initialElement);
 
   // основной цикл формирования массива
-  for (let i = 1; i < amountOFelement; i += 1) {
+  for (let k = 1; k < amountOFelement; k += 1) {
     initialElement += arithmeticDependence;
     mass.push(initialElement);
   }
@@ -55,7 +46,5 @@ for (let j = 0; j < 3; j += 1) {
     break;
   }
   console.log('Correct!');
-  if (j === 2) {
-    console.log(`Congratulations, ${name}!`);
-  }
+  Congratulations(name, i);
 }
