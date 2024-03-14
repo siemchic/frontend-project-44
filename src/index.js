@@ -20,7 +20,9 @@ export const Congratulations = (name, i) => {
 };
 
 export const BadResult = (answer, rezult, name) => {
-  console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rezult}'`);
-  console.log(`Let's try again, ${name}!`);
-  return false;
+  if (answer !== rezult) {
+    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rezult}'`);
+    console.log(`Let's try again, ${name}!`);
+    return false;
+  }
 };
