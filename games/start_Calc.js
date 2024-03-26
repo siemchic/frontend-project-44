@@ -32,14 +32,11 @@ const calculation = () => {
 
     const answer = readlineSync.question('Your answer: ');
     const rezult = rez.toString();
-    BadResult(answer, rezult, name, i);
-    // if (rezult !== answer) {
-    // console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rezult}'`);
-    // console.log(`Let's try again, ${name}!`);
-    // break;
-    // }
-    console.log('Correct!');
-    Congratulations(name, i);
+    // BadResult(answer, rezult, name);
+    if (BadResult(answer, rezult, name) === true) {
+      break;
+    }
+    Congratulations(name, answer, rezult, i);
   }
 };
 export default calculation;
