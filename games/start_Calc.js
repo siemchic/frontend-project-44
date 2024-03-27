@@ -21,18 +21,13 @@ const calculation = () => {
 
     if (randomElement === '+') {
       rez = chislo1 + chislo2;
-    // console.log('znachenie = ' + rez);
     } else if (randomElement === '-') {
       rez = chislo1 - chislo2;
-    // console.log('znachenie = ' + rez);
     } else if (randomElement === '*') {
       rez = chislo1 * chislo2;
-    // console.log('znachenie = ' + rez);
     }
-
     const answer = readlineSync.question('Your answer: ');
     const rezult = rez.toString();
-    // BadResult(answer, rezult, name);
     if (BadResult(answer, rezult, name) === true) {
       break;
     }
