@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import readlineSync from 'readline-sync';
 import {
   getRandomNumber, startGame,
 // eslint-disable-next-line import/extensions
@@ -29,5 +28,4 @@ const calculation = () => {
   const title = 'What is the result of the expression?';
   startGame(title, getRoundData);
 };
-// };
 export default calculation;

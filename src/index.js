@@ -29,7 +29,6 @@ export const startGame = (title, getRoundData) => {
     console.log(data.qestion);
     const answer = readlineSync.question('Your answer: ');
     if (BadResult(answer, data.rezult, name) === true) {
-    // break;
       return;
     }
     console.log('Correct!');
