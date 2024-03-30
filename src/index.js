@@ -33,5 +33,5 @@ export const startGame = (title, getRoundData) => {
     }
     console.log('Correct!');
   }
-  console.log(`Congratulation, ${name}!`);
+  console.log(`Congratulations, ${name}!`);
 };
