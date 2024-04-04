@@ -1,8 +1,6 @@
 #!/usr/bin/env node
-import {
-  getRandomNumber, startGame,
-// eslint-disable-next-line import/extensions
-} from '../src/index.js';
+import startGame from '../src/index.js';
+import getRandomNumber from '../src/utils/randomNumber.js';
 
 const getRoundData = () => {
   let qestion = '';
@@ -13,13 +11,9 @@ const getRoundData = () => {
     }
     return 'no';
   };
-  // цикл с рандомным числом
-  for (let i = 0; i < 3; i += 1) {
-  // вопрос
-    const randomnumber = getRandomNumber(1, 100);
-    qestion = (`Question: ${randomnumber}`);
-    rezult = numberIsEven(randomnumber);
-  }
+  const randomnumber = getRandomNumber(1, 100);
+  qestion = (`Question: ${randomnumber}`);
+  rezult = numberIsEven(randomnumber);
   return { qestion, rezult };
 };
 const Even = () => {

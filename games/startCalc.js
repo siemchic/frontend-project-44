@@ -1,8 +1,6 @@
 #!/usr/bin/env node
-import {
-  getRandomNumber, startGame,
-// eslint-disable-next-line import/extensions
-} from '../src/index.js';
+import startGame from '../src/index.js';
+import getRandomNumber from '../src/utils/randomNumber.js';
 
 const getRoundData = () => {
   const znak = ['+', '-', '*'];
