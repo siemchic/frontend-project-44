@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { WhatName } from '../src/index.js';
+import WhatName from '../src/utils/cli.js';
 
 WhatName();
