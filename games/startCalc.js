@@ -8,7 +8,6 @@ const getRoundData = () => {
   const chislo2 = getRandomNumber(1, 100);
   const randomIndex = Math.floor(Math.random() * 3);
   const randomElement = znak[randomIndex];
-  //  запихнуть в переменную и отправить
   const qestion = `Question: ${chislo1} ${randomElement} ${chislo2}`;
   let rez = 0;
   if (randomElement === '+') {

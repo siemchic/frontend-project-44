@@ -14,7 +14,6 @@ const getRoundData = () => {
       number2 -= number1;
     }
   }
-  // console.log(`otvet = ${number1}`);
   const rezult = number1.toString();
   return { qestion, rezult };
 };
