@@ -21,3 +21,4 @@ brain-prime
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/siemchic/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/siemchic/frontend-project-44/actions)
+[![Maintainability](https://api.codeclimate.com/v1/badges/3a68d7e27f9f80bb29fc/maintainability)](https://codeclimate.com/github/siemchic/frontend-project-44/maintainability)
